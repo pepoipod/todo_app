@@ -1,0 +1,12 @@
+/* header */
+
+#header {
+	background: #1B252D;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+
+#header h1 {
+	color: #fff;
+}

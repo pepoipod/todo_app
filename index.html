@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>TodoApp</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="container">
+		<header id="header">
+			<h1>Todo App</h1>
+		</header>
+
+		<main class="clearfix">
+			<nav class="sec-category">
+				<ul>
+					<li class="fav"><a href="javascript:void(0)" title=""><input type="hidden" value="fav"><i class="fa fa-star-o"></i> お気に入り</a></li>
+					<li class="today"><a href="javascript:void(0)" title=""><input type="hidden" value="today"><i class="fa fa-calendar"></i> 今日</a></li>
+					<li class="this-week"><a href="javascript:void(0)" title=""><input type="hidden" value="this_week"><i class="fa fa-calendar"></i> 今週</a>
+					</li>
+					<li class="add-category-btn"><a href="#new-category"><input type="hidden" value="">+</a></li>
+				</ul>
+			<!--/sec-category-->
+			</nav>
+
+			<div class="sec-body">
+				<div class="clearfix">
+					<p class="add-task-btn"><a href="#new-task"><i class="fa fa-plus-square-o"></i></a></p>
+				</div>
+
+				<div class="task-container">
+					<div class="year-tasks">
+						<p class="year"><time>2015</time></p>
+						<div class="tasks">
+							<time class="date">8/15</time>
+
+							<ul>
+								<li>
+									<div class="wrapper clearfix">
+										<div class="left">
+											<a class="check-box" href="javascript:void(0)"><i class="fa fa-square-o"></i></a>
+											<a class="view-task" href="#side-menu" title=""><p class="title">titlehogehohgoehgoehogheogheohgoehgoehgheoghoeghoehgoehgoehgoehgoehgoehgoehogheogheogheoghoe</p></a>
+										</div>
+										<div class="right">
+											<time class="dead-line"><i class="fa fa-clock-o"></i> 8:00</time>
+											<p class="fav"><i class="fa fa-star-o"></i></p>
+											<p class="achievement-rate"><progress value="0" max="100"><span>0</span>%</progress>0%</p>
+										</div>
+									<!--/wrapper-->
+									</div>
+								</li>
+								<li>
+									<div class="wrapper clearfix">
+										<div class="left">
+											<a class="check-box" href="javascript:void(0)"><i class="fa fa-square-o"></i></a>
+											<p class="title">title</p>
+										</div>
+										<div class="right">
+											<time class="dead-line"><i class="fa fa-clock-o"></i> 10:00</time>
+											<p class="fav"><i class="fa fa-star-o"></i></p>
+											<p class="achievement-rate"><progress value="0" max="100"><span>0</span>%</progress>0%</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrapper clearfix">
+										<div class="left">
+											<a class="check-box" href="javascript:void(0)"><i class="fa fa-square-o"></i></a>
+											<p class="title">title</p>
+										</div>
+										<div class="right">
+											<time class="dead-line"><i class="fa fa-clock-o"></i> 15:00</time>
+											<p class="fav"><i class="fa fa-star-o"></i></p>
+											<p class="achievement-rate"><progress value="0" max="100"><span>0</span>%</progress>0%</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						<!--/tasks-->
+						</div>
+
+						<div class="tasks">
+							<time class="date">8/19</time>
+
+							<ul>
+								<li>
+									<div class="wrapper clearfix">
+										<div class="left">
+											<a class="check-box" href="javascript:void(0)"><i class="fa fa-square-o"></i></a>
+											<p class="title">title</p>
+										</div>
+										<div class="right">
+											<time class="dead-line"><i class="fa fa-clock-o"></i> 8:00</time>
+											<p class="fav"><i class="fa fa-star-o"></i></p>
+											<p class="achievement-rate"><progress value="0" max="100"><span>0</span>%</progress>0%</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrapper clearfix">
+										<div class="left">
+											<a class="check-box" href="javascript:void(0)"><i class="fa fa-square-o"></i></a>
+											<p class="title">title</p>
+										</div>
+										<div class="right">
+											<time class="dead-line"><i class="fa fa-clock-o"></i> 10:00</time>
+											<p class="fav"><i class="fa fa-star-o"></i></p>
+											<p class="achievement-rate"><progress value="0" max="100"><span>0</span>%</progress>0%</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrapper clearfix">
+										<div class="left">
+											<a class="check-box" href="javascript:void(0)"><i class="fa fa-square-o"></i></a>
+											<p class="title">title</p>
+										</div>
+										<div class="right">
+											<time class="dead-line"><i class="fa fa-clock-o"></i> 12:00</time>
+											<p class="fav"><i class="fa fa-star-o"></i></p>
+											<p class="achievement-rate"><progress value="0" max="100"><span>0</span>%</progress>0%</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						<!--/tasks-->
+						</div>
+
+						<div class="tasks">
+							<time class="date">8/22</time>
+
+							<ul>
+								<li>
+									<div class="wrapper clearfix">
+										<div class="left">
+											<a class="check-box" href="javascript:void(0)"><i class="fa fa-square-o"></i></a>
+											<p class="title">title</p>
+										</div>
+										<div class="right">
+											<time class="dead-line"><i class="fa fa-clock-o"></i> 8:00</time>
+											<p class="fav"><i class="fa fa-star-o"></i></p>
+											<p class="achievement-rate"><progress value="0" max="100"><span>0</span>%</progress>0%</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrapper clearfix">
+										<div class="left">
+											<a class="check-box" href="javascript:void(0)"><i class="fa fa-square-o"></i></a>
+											<p class="title">title</p>
+										</div>
+										<div class="right">
+											<time class="dead-line"><i class="fa fa-clock-o"></i> 17:00</time>
+											<p class="fav"><i class="fa fa-star-o"></i></p>
+											<p class="achievement-rate"><progress value="0" max="100"><span>0</span>%</progress>0%</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="wrapper clearfix">
+										<div class="left">
+											<a class="check-box" href="javascript:void(0)"><i class="fa fa-square-o"></i></a>
+											<p class="title">title</p>
+										</div>
+										<div class="right">
+											<time class="dead-line"><i class="fa fa-clock-o"></i> 21:00</time>
+											<p class="fav"><i class="fa fa-star-o"></i></p>
+											<p class="achievement-rate"><progress value="0" max="100"><span>0</span>%</progress>0%</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						<!--/tasks-->
+						</div>
+					<!--/year-tasks-->
+					</div>
+				<!--/task-container-->
+				</div>
+
+				<div class="btn-container">
+					<input class="display-done-tasks-btn" type="button" name="" value="完了済みタスクを表示">
+				</div>
+			<!--/sec-body-->
+			</div>
+		</main>
+	<!--/container-->
+	</div>
+
+	<section id="new-task" class="modal">
+		<div class="new-task-wrapper">
+			<header>
+				<h2>新規タスク</h2>
+			</header>
+			<div class="form-parts">
+				<div class="wrapper">
+					<p>タイトル :</p>
+				</div>
+				<input class="i-title" type="text" name="タイトル" value="" placeholder="">
+			</div>
+
+			<div class="form-parts">
+				<div class="wrapper">
+					<p>カテゴリ :</p>
+				</div>
+				<input class="i-category" type="text" name="カテゴリ" value="" placeholder="">
+			</div>
+
+			<div class="form-parts">
+				<div class="wrapper">
+					<p>期限 :</p>
+				</div>
+				<div class="selections">
+					<select class="s-year"></select>年
+					<select class="s-month"></select>月
+					<select class="s-day"></select>日​
+					<select class="s-hour"></select>時
+					<select class="s-minutes"></select>分​
+
+				<!--/selections-->
+				</div>
+			</div>
+
+			<div class="form-parts text-area">
+				<textarea class="i-body" name="body" rows="4" cols="40" placeholder="本文"></textarea>
+				<input class="i-submit" type="submit" name="" value="追加">
+			</div>
+		<!--/new-task-wrapper-->
+		</div>
+	<!--/new-task-->
+	</section>
+
+	<section id="new-category" class="modal">
+		<div class="new-category-wrapper">
+			<header>
+				<h2>新規カテゴリー</h2>
+			</header>
+
+			<div class="form-parts">
+				<div class="wrapper">
+					<p>名前   :</p>
+				</div>
+				<input class="i-name" type="text" name="タイトル" value="" placeholder="">
+			</div>
+
+			<input class="i-submit" type="submit" name="" value="追加">
+		<!--/new-category-wrapper-->
+		</div>
+	<!--/new-category-->
+	</section>
+
+	<div id="side-menu">
+		<ul>
+			<a class="check-box" href="javascript:void(0)"><i class="fa fa-square"></i></a>
+
+			<div class="util">
+				<p class="edit"><a href="javascript:void(0)" title=""><i class="fa fa-pencil-square-o"></i></a></p>
+				<p class="trash"><a href="javascript:void(0)" title=""><i class="fa fa-trash-o"></i></a></p>
+				<p class="fav"><a href="javascript:void(0)" title=""><i class="fa fa-star-o"></i></a></p>
+			<!--/util-->
+			</div>
+
+			<li class="title">
+				<h3>タイトル</h3>
+				<p>titlefajlnhijnaolijvosgailbcfgkhbcfgkagnfhilbscgiobansgkgabcilfangokagbcofsk</p>
+			</li>
+			<li class="dead-line">
+				<h3>期限</h3>
+				<time>2015/8/15<i class="fa fa-clock-o"></i>8:00</time>
+				<p class="achievement-rate"><progress value="0" max="100"><span>0</span>%</progress>0%</p>
+			</li>
+			<li class="body">
+				<h3>本文</h3>
+				<div>これはテストです</div>
+			</li>
+		</ul>
+	<!--/side-menu-->
+	</div>
+
+	<script src="assets/js/index.js"></script>
+</body>
+</html>
