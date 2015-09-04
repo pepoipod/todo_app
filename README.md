@@ -1,2 +1,2 @@
 # todo_app
-インターン先で練習がてらに作ったTodoApp
+インターンで練習がてらに作ったTodoApp
