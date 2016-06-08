@@ -406,6 +406,10 @@ main {
 	padding: 10px 0 0;
 }
 
+#side-menu ul {
+	height: 100%;
+}
+
 #side-menu ul li {
 	display: block;
 	background: #fff;
@@ -476,11 +480,18 @@ main {
 	float: left;
 }
 
+#side-menu ul .body {
+	height: 70%;
+}
+
 #side-menu ul .title p, #side-menu ul .body div {
 	display: inline-block;
 	width: 80%;
+	height: 90%;
+	padding-bottom: 5px;
 	margin: 0 38px 15px;
 	word-wrap: break-word;
+	overflow: scroll;
 }
 
 #side-menu ul .title p, #side-menu ul .body div a i {
