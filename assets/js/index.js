@@ -487,7 +487,8 @@
 	};
 
 	var toggleIsFav = function (_task_id) {
-		return function () {
+		return function (e) {
+			e.stopPropagation();
 			var task = getTaskObjectById(_task_id);
 
 			task.is_fav = !task.is_fav;
@@ -738,6 +739,7 @@
 			li_dom.classList.add('elapsed');
 		}
 
+		li_dom.addEventListener('click', openSideMenu(_task.id), false);
 		wrapper_dom.classList.add('wrapper', 'clearfix');
 
 		//left
