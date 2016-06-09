@@ -475,7 +475,8 @@
 
 
 	var toggleIsDone = function (_task_id) {
-		return function () {
+		return function (e) {
+			e.stopPropagation();
 			var task = getTaskObjectById(_task_id);
 
 			task.is_done = !task.is_done;
